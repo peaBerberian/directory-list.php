@@ -7,17 +7,35 @@ It is secure (url and filename should be stripped, filtered the '.' and '..' dir
 
 ![screenshot](./assets/screenshot.png)
 
+
+
 ## Installation
 
-To make it work, you first need a HTTP server with PHP. If you have those requirements put the directory in the folder you want to share (it has to be accessible via HTTP).
+To make it work, you first need a HTTP server with PHP.
+
+Then, just put the ``directory-list`` directory in the server directory you want to share
+(it has to be accessible via HTTP).
+
+The `index.php` from this new directory will then all make it work.
+
+### Example
+
+Let's say you want to share a directory in your server, having the path: `/some/path/www/to_share`.
+
+You will need to copy the ``directory-list`` directory from this repository to `/some/path/www/to_share/`.
+You will thus have a new directory, `/some/path/www/to_share/directory-list`.
+
+You can then profit from this script by going to the URL directly pointing to the `index.php` of this created directory. 
 
 You also can also easily modify the PHP file to take files from elsewhere in your server.
+
+
 
 ## TODO
 
 The CSS could be improved, might do it in the future.
 
-I'm not really investing time (nor have I) on this because I already have another project which should cover the same usecases.
+
 
 ## Notes
 
